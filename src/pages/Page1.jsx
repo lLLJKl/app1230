@@ -1,3 +1,3 @@
-const Page1 = () => <h1>안녕하세요.</h1>
+const Page1 = () => <h1>LEE HYUN SEO</h1>
 
 export default Page1
