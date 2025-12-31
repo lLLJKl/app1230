@@ -4,6 +4,15 @@ const Page1 = () => {
         //location"location.href = 'Select.html';"
     } 
 
+    const arr = [
+        { "name":"스티븐" , "email":"jobs@shellfolder.com", "regDate":"2023-02-28"},
+        { "name":"에브릴" , "email":"lavigne@shellfolder.com", "regDate":"2023-02-27"},
+    ]
+
+    const styles ={
+        "cursor": "pointer"
+    }
+
 return (
     <div className="container mt-3">
 	  <h1 className="display-1 text-center">사용자 목록</h1>
@@ -19,16 +28,18 @@ return (
 	      </tr>
 	    </thead>
 	    <tbody>
-	      <tr className="cursor-pointer" onClick={onclick}>
-	        <td>스티븐</td>
-	        <td>jobs@shellfolder.com</td>
-	        <td>2023-02-28</td>
-	      </tr>
-	      <tr className="cursor-pointer" onClick={onclick}>
-	        <td>에브릴</td>
-	        <td>lavigne@shellfolder.com</td>
-	        <td>2023-02-27</td>
-	      </tr>
+	      {
+            arr.map((v,i) =>{
+                return(
+                    <tr style={styles} onClick={onclick} key={i}>
+	                    <td>{ v.name}</td>
+	                    <td>{ v.email}</td>
+	                    <td>{v.regDate}</td>
+	                </tr>
+                )
+            })
+          }
+	      
 	    </tbody>
 	  </table>
 	</div>
