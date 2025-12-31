@@ -1,3 +1,5 @@
-const Page3 = () => <h1>Jang Tae Won</h1>
+const math = "80";
+const eng = "60";
 
-export default Page3
+result = (number(math)+number(eng))/2;
+console.log(result);
