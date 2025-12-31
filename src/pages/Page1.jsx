@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useNavigate } from 'react-router'
 
 const Page1 = () => {
@@ -10,6 +11,17 @@ const Page1 = () => {
     const arr = [
      { "name":"스티븐" , "email":"jobs@shellfolder.com", "regDate":"2023-02-28"},
      { "name":"에브릴" , "email":"lavigne@shellfolder.com", "regDate":"2023-02-27"},
+=======
+const Page1 = () => {
+
+    const onclick = () => {
+        //location"location.href = 'Select.html';"
+    } 
+
+    const arr = [
+        { "name":"스티븐" , "email":"jobs@shellfolder.com", "regDate":"2023-02-28"},
+        { "name":"에브릴" , "email":"lavigne@shellfolder.com", "regDate":"2023-02-27"},
+>>>>>>> 11bafcef217a9796e6cc49ebc00acce0258892ed
     ]
 
     const styles ={
@@ -35,9 +47,15 @@ return (
             arr.map((v,i) =>{
                 return(
                     <tr style={styles} onClick={onclick} key={i}>
+<<<<<<< HEAD
 	                    <td>{ v.name}</td>
 	                    <td>{ v.email}</td>
 	                    <td>{v.regDate}</td>
+=======
+	                    <td>{ v.name }</td>
+	                    <td>{ v.email }</td>
+	                    <td>{ v.regDate }</td>
+>>>>>>> 11bafcef217a9796e6cc49ebc00acce0258892ed
 	                </tr>
                 )
             })
