@@ -32,9 +32,9 @@ return (
             arr.map((v,i) =>{
                 return(
                     <tr style={styles} onClick={onclick} key={i}>
-	                    <td>{ v.name}</td>
-	                    <td>{ v.email}</td>
-	                    <td>{v.regDate}</td>
+	                    <td>{ v.name }</td>
+	                    <td>{ v.email }</td>
+	                    <td>{ v.regDate }</td>
 	                </tr>
                 )
             })
