@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router'
 
-const Page2 = () => {
+const Page3 = () => {
     const navigate = useNavigate()
     const onclick = () => {
         navigate("/")
@@ -9,7 +9,7 @@ const Page2 = () => {
         "name" : "에브릴",
         "email" : "lavigne@shellfolder.com",
         "pwd" : "1",
-        "gender" : false
+        "gender" : true
     }
     return(
             <div className="container mt-3">
@@ -57,4 +57,4 @@ const Page2 = () => {
     )
 }
 
-export default Page2
+export default Page3
